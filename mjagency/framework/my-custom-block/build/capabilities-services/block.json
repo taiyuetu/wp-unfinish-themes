@@ -1,0 +1,81 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/capabilities-services",
+  "version": "0.1.0",
+  "title": "Capabilities Services",
+  "category": "design",
+  "icon": "rest-api",
+  "description": "A dynamic services section with editable items.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "default": "Capabilities"
+    },
+    "titleTop": {
+      "type": "string",
+      "default": "What we"
+    },
+    "titleEm": {
+      "type": "string",
+      "default": "do best"
+    },
+    "intro": {
+      "type": "string",
+      "default": "From foundational brand thinking to immersive digital environments — we operate across the full spectrum of creative and technical disciplines."
+    },
+    "services": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "num": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "desc": {
+            "type": "string"
+          }
+        }
+      },
+      "default": [
+        {
+          "num": "01",
+          "name": "Brand<br>Strategy",
+          "desc": "Positioning, identity architecture, verbal and visual systems that earn premium perception."
+        },
+        {
+          "num": "02",
+          "name": "Web<br>Design",
+          "desc": "Editorial-grade digital experiences. Considered, purposeful, and built to convert."
+        },
+        {
+          "num": "03",
+          "name": "Digital<br>Experience",
+          "desc": "Immersive interfaces, campaigns, and interactive storytelling at cultural scale."
+        },
+        {
+          "num": "04",
+          "name": "Interactive<br>Development",
+          "desc": "Performance-driven, technically precise front-end engineering that honours the design."
+        }
+      ]
+    }
+  },
+  "textdomain": "capabilities-services",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}

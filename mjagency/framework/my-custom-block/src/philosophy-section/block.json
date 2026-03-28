@@ -1,0 +1,59 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/philosophy-section",
+	"version": "0.1.0",
+	"title": "Philosophy Section",
+	"category": "design",
+	"icon": "lightbulb",
+	"description": "A dynamic philosophy section with stats and rich text editing.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"sectionLabel": {
+			"type": "string",
+			"default": "Our Philosophy"
+		},
+		"philosophyStatement": {
+			"type": "string",
+			"default": "Design is not<br>decoration.<br>It is <em>strategy</em><br>made visible."
+		},
+		"philosophyText1": {
+			"type": "string",
+			"default": "We believe the most powerful design work exists at the intersection of culture, technology, and human behaviour. Every pixel, every interaction, every word carries intent."
+		},
+		"philosophyText2": {
+			"type": "string",
+			"default": "We work with a select number of clients each year — not because we can't scale, but because depth requires focus. The brands we shape with you should outlast trends and define categories."
+		},
+		"stats": {
+			"type": "array",
+			"default": [
+				{
+					"num": "140+",
+					"label": "Projects Delivered"
+				},
+				{
+					"num": "9yr",
+					"label": "In Practice"
+				},
+				{
+					"num": "28",
+					"label": "Industry Awards"
+				},
+				{
+					"num": "100%",
+					"label": "Client Retention"
+				}
+			]
+		}
+	},
+	"textdomain": "philosophy-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

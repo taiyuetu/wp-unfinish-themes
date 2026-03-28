@@ -1,0 +1,82 @@
+/* Scoped styles for the Gutenberg Editor to ensure WYSIWYG accuracy */
+.wp-block-create-block-capabilities-services {
+	padding: 40px;
+	background: #f8f8f8;
+	/* Light background for visibility in editor */
+	border: 1px dashed #ccc;
+
+	.services-header {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 3rem;
+
+		.section-label {
+			text-transform: uppercase;
+			font-size: 0.75rem;
+			letter-spacing: 0.1em;
+			color: #666;
+			margin-bottom: 1rem;
+		}
+
+		.services-title {
+			font-size: 3rem;
+			line-height: 1.1;
+			font-weight: 400;
+			margin: 0;
+
+			em {
+				font-style: italic;
+				font-family: serif;
+				/* Example styling */
+			}
+		}
+
+		.services-intro {
+			max-width: 400px;
+			font-size: 1.1rem;
+			color: #444;
+		}
+	}
+
+	.services-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 20px;
+
+		.service-item {
+			padding: 2rem;
+			border-top: 1px solid #000;
+			position: relative;
+
+			.service-num {
+				font-size: 0.8rem;
+				margin-bottom: 2rem;
+			}
+
+			.service-name {
+				font-size: 1.5rem;
+				font-weight: 500;
+				margin-bottom: 1rem;
+				line-height: 1.2;
+			}
+
+			.service-desc {
+				font-size: 0.9rem;
+				color: #555;
+				line-height: 1.6;
+			}
+
+			.service-arrow {
+				position: absolute;
+				top: 2rem;
+				right: 2rem;
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	/* Placeholder colors for empty fields */
+	.rich-text:empty:before {
+		color: rgba(0, 0, 0, 0.3);
+	}
+}

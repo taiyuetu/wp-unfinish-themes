@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VAUX - Contact Us</title>
+<meta name="description" content="Contact Vaux for brand, web design, and digital launch projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Neue+Haas+Grotesk+Display+Pro:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="contact-page">
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">Vaux</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="portfolio-items.html">Projects</a></li>
+    <li><a href="portfolio.html">Case Studies</a></li>
+  </ul>
+  <a href="#contact-form-wrap" class="nav-cta">Send Enquiry</a>
+</nav>
+
+<section id="contact-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-overlay"></div>
+  <div class="contact-shell">
+    <div>
+      <p class="single-portfolio-kicker">Contact Vaux</p>
+      <h1 class="contact-title">Start a project<br><em>with a clear point of view.</em></h1>
+      <p class="contact-intro">Tell us what you’re building, what needs to change, and when you want to launch. We respond directly and only take on work where we can stay close to the strategy and execution.</p>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:hello@vaux.studio">
+          <span>
+            <div class="contact-link-label">Email</div>
+            <div class="contact-link-value">hello@vaux.studio</div>
+          </span>
+          <span class="contact-link-label">Direct</span>
+        </a>
+        <a class="contact-link" href="tel:+11234567890">
+          <span>
+            <div class="contact-link-label">Phone</div>
+            <div class="contact-link-value">+1 (123) 456-7890</div>
+          </span>
+          <span class="contact-link-label">Call</span>
+        </a>
+      </div>
+    </div>
+    <aside class="contact-panel reveal reveal-delay-1">
+      <div class="contact-panel-row">
+        <span class="contact-panel-label">Response time</span>
+        <span class="contact-panel-value">Within 1-2 business days</span>
+      </div>
+      <div class="contact-panel-row">
+        <span class="contact-panel-label">Project types</span>
+        <span class="contact-panel-value">Brand systems, websites, launches, campaigns</span>
+      </div>
+      <div class="contact-panel-row">
+        <span class="contact-panel-label">Working style</span>
+        <span class="contact-panel-value">Small, senior-led, and collaborative</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="contact-form-wrap" class="contact-section">
+  <div class="contact-layout">
+    <div class="contact-sticky">
+      <div class="section-label">Project Enquiry</div>
+      <p class="contact-copy">Use the form to outline your project. The submit button opens your mail client with the message prefilled, so the page works without any backend setup.</p>
+      <div class="contact-list">
+        <div class="contact-item">
+          <div class="contact-item-label">Ideal for</div>
+          <div class="contact-item-value">Founders, marketing teams, and brands preparing a launch or rebrand.</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-label">Best next step</div>
+          <div class="contact-item-value">Send us the brief, timeline, and any reference material you already have.</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <form class="contact-form" action="mailto:hello@vaux.studio" method="post" enctype="text/plain">
+        <div class="contact-field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="Jane Doe" required>
+        </div>
+        <div class="contact-field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="jane@company.com" required>
+        </div>
+        <div class="contact-field">
+          <label for="company">Company</label>
+          <input id="company" name="company" type="text" placeholder="Studio or brand name">
+        </div>
+        <div class="contact-field">
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" placeholder="Tell us what you need, what is not working, and your target launch date." required></textarea>
+        </div>
+        <button type="submit" class="btn-large">Send Enquiry</button>
+        <p class="contact-form-note">If mailto does not suit your workflow, email us directly at hello@vaux.studio and we’ll continue there.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="contact-cta">
+  <div class="cta-bg-text">VAUX</div>
+  <div class="cta-label reveal">Open for select projects</div>
+  <h2 class="cta-headline reveal">
+    Let’s make the<br>next launch feel<br><em>inevitable.</em>
+  </h2>
+  <div class="cta-actions reveal">
+    <a href="mailto:hello@vaux.studio" class="btn-large">Email Us</a>
+    <a href="about.html" class="cta-email">About the studio</a>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="footer-logo">Vaux</a>
+  <p class="footer-copy">Copyright 2026 Vaux Design Studio. All rights reserved.</p>
+  <nav class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio-items.html">Projects</a>
+    <a href="portfolio.html">Case Studies</a>
+  </nav>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

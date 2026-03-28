@@ -1,0 +1,71 @@
+/**
+ * These styles ensure the editor looks like the front-end
+ * while providing clear focus states for the RichText fields.
+ */
+
+.wp-block-philosophy-section {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4rem;
+	padding: 2rem;
+	background: #fff; // Adjust based on your theme
+	border: 1px dashed #ccc;
+
+	.phil-left,
+	.phil-right {
+		flex: 1;
+		min-width: 300px;
+	}
+
+	.section-label {
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		margin-bottom: 1.5rem;
+		color: #666;
+	}
+
+	.phil-statement {
+		font-size: 2.5rem;
+		line-height: 1.1;
+		font-weight: 500;
+
+		em {
+			font-style: italic;
+		}
+	}
+
+	.phil-text {
+		font-size: 1.1rem;
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+	}
+
+	.phil-divider {
+		height: 1px;
+		background: #eee;
+		margin: 2rem 0;
+	}
+
+	.phil-stats {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+
+		.phil-stat-num {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+
+		.phil-stat-label {
+			font-size: 0.9rem;
+			color: #888;
+		}
+	}
+
+	// RichText Focus Helpers
+	.rich-text:focus {
+		outline: 1px solid var(--wp-admin-theme-color);
+		background: rgba(0, 0, 0, 0.02);
+	}
+}
