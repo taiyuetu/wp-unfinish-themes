@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "custom/about-hero",
+  "version": "1.0.0",
+  "title": "About Hero",
+  "category": "theme",
+  "icon": "cover-image",
+  "description": "A full-width about hero section with editable text, image, and badge.",
+  "supports": {
+    "html": false,
+    "align": ["full", "wide"]
+  },
+  "attributes": {
+    "tag": {
+      "type": "string",
+      "default": "Since 2001"
+    },
+    "title": {
+      "type": "string",
+      "default": "Engineering <span>Precision</span> in Motion"
+    },
+    "description": {
+      "type": "string",
+      "default": "Axiom Drive is a global Tier-1 manufacturer of precision wheel hub assemblies, serving leading automotive OEMs and Tier-1 suppliers across four continents. With over two decades of engineering excellence, we deliver components that define industry standards for reliability and performance."
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Partner With Us"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "imageId": {
+      "type": "number",
+      "default": 0
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "badgeValue": {
+      "type": "string",
+      "default": "24+"
+    },
+    "badgeLabel": {
+      "type": "string",
+      "default": "Years of Excellence"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "render": "file:./render.php"
+}

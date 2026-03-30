@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Showcase | AXIOM DRIVE</title>
+<meta name="description" content="Explore Axiom Drive imagery across assembly, manufacturing, testing, and logistics with a filterable grid, pagination, and lightbox viewer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Barlow:wght@300;400;500;600&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav" id="mainNav" aria-label="Primary navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="Axiom Drive home">
+      <div class="nav__logo-mark" aria-hidden="true"></div>
+      <div>
+        AXIOM DRIVE
+        <span class="nav__logo-sub">Precision Hub Systems</span>
+      </div>
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="index.html#capabilities" class="nav__link">Capabilities</a></li>
+      <li class="nav__item">
+        <a href="products-archive.html" class="nav__link">
+          Products
+          <svg class="nav__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <div class="nav__megamenu">
+          <div class="nav__megamenu__grid">
+            <div class="nav__megamenu__col">
+              <div class="nav__megamenu__title">By Generation</div>
+              <div class="nav__megamenu__links">
+                <a href="products-archive.html" class="nav__megamenu__link">
+                  <div class="nav__megamenu__link-icon"></div>
+                  <div class="nav__megamenu__link-info">
+                    <div class="nav__megamenu__link-name">Generation I</div>
+                    <div class="nav__megamenu__link-desc">Standard duty 32kN load</div>
+                  </div>
+                </a>
+                <a href="products-archive.html" class="nav__megamenu__link">
+                  <div class="nav__megamenu__link-icon"></div>
+                  <div class="nav__megamenu__link-info">
+                    <div class="nav__megamenu__link-name">Generation II</div>
+                    <div class="nav__megamenu__link-desc">ABS integrated 42-48kN</div>
+                  </div>
+                </a>
+                <a href="products-archive.html" class="nav__megamenu__link">
+                  <div class="nav__megamenu__link-icon"></div>
+                  <div class="nav__megamenu__link-info">
+                    <div class="nav__megamenu__link-name">Generation III</div>
+                    <div class="nav__megamenu__link-desc">EV optimised 52-56kN</div>
+                  </div>
+                </a>
+                <a href="products-archive.html" class="nav__megamenu__link">
+                  <div class="nav__megamenu__link-icon"></div>
+                  <div class="nav__megamenu__link-info">
+                    <div class="nav__megamenu__link-name">Heavy Duty</div>
+                    <div class="nav__megamenu__link-desc">Commercial 85kN max</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="nav__megamenu__col">
+              <div class="nav__megamenu__title">By Application</div>
+              <div class="nav__megamenu__links">
+                <a href="products-archive.html" class="nav__megamenu__link">
+                  <div class="nav__megamenu__link-icon"></div>
+                  <div class="nav__megamenu__link-info">
+                    <div class="nav__megamenu__link-name">Passenger Vehicle</div>
+                    <div class="nav__megamenu__link-desc">Sedan, SUV, CUV</div>
+                  </div>
+                </a>
+                <a href="products-archive.html" class="nav__megamenu__link">
+                  <div class="nav__megamenu__link-icon"></div>
+                  <div class="nav__megamenu__link-info">
+                    <div class="nav__megamenu__link-name">EV Platform</div>
+                    <div class="nav__megamenu__link-desc">BEV, PHEV, HEV</div>
+                  </div>
+                </a>
+                <a href="products-archive.html" class="nav__megamenu__link">
+                  <div class="nav__megamenu__link-icon"></div>
+                  <div class="nav__megamenu__link-info">
+                    <div class="nav__megamenu__link-name">Commercial Vehicle</div>
+                    <div class="nav__megamenu__link-desc">Truck, bus, industrial</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="nav__megamenu__featured">
+              <div class="nav__megamenu__featured-image">
+                <span style="position:absolute;bottom:8px;right:8px;font-family:var(--f-mono);font-size:8px;color:var(--c-steel-mid);">IMAGE</span>
+                <div class="nav__megamenu__featured-label">
+                  <div class="nav__megamenu__featured-title">AX-3560 EV Hub</div>
+                  <a href="product-detail.html" class="nav__megamenu__featured-link">
+                    View Product
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav__megamenu__footer">
+            <span class="nav__megamenu__footer-text">48+ products available</span>
+            <a href="products-archive.html" class="nav__megamenu__footer-link">
+              View All Products
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li><a href="images-showcase.html" class="nav__link">Showcase</a></li>
+      <li><a href="about-us.html" class="nav__link">About</a></li>
+      <li><a href="index.html#quality" class="nav__link">Quality</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav__cta">Request Quote</a>
+  </div>
+  <button class="nav__hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+  <nav class="mobile-menu__links">
+    <a href="index.html#capabilities" class="mobile-menu__link">Capabilities <svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    <a href="products-archive.html" class="mobile-menu__link">Products <svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    <a href="images-showcase.html" class="mobile-menu__link">Showcase <svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    <a href="about-us.html" class="mobile-menu__link">About <svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    <a href="contact.html" class="mobile-menu__link">Contact <svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+  </nav>
+  <div class="mobile-menu__cta">
+    <a href="contact.html" class="btn-primary">
+      <span>Request Technical Quote</span>
+      <svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+</div>
+
+<section class="page-banner" aria-labelledby="page-banner-title">
+  <div class="page-banner__bg" aria-hidden="true"></div>
+  <div class="page-banner__hub" aria-hidden="true">
+    <div class="hub-ring"></div>
+    <div class="hub-ring"></div>
+    <div class="hub-ring"></div>
+    <div class="hub-center"></div>
+  </div>
+  <div class="container">
+    <div class="page-banner__content">
+      <h1 class="page-banner__title reveal" id="page-banner-title">Image Showcase</h1>
+    </div>
+  </div>
+</section>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <div class="container">
+    <ol class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Home</a></li>
+      <li class="breadcrumbs__separator" aria-hidden="true">/</li>
+      <li class="breadcrumbs__item"><span class="breadcrumbs__current" aria-current="page">Showcase</span></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="showcase-page" data-gallery="showcase" data-gallery-per-page="6">
+  <div class="container">
+    <div class="showcase-page__intro reveal">
+      <div>
+        <span class="tag">Visual Archive</span>
+        <h2 class="showcase-page__title">Factory Scenes, Product Frames, <span>And Validation Details</span></h2>
+      </div>
+      <p class="showcase-page__summary">Browse a curated image library across assembly, manufacturing, testing, and logistics. The grid is filterable, paginated, and every image opens in a focused lightbox so buyers can review details without leaving the page.</p>
+    </div>
+
+    <div class="showcase-page__stats reveal reveal-delay-1">
+      <div class="showcase-stat">
+        <div class="showcase-stat__value">12</div>
+        <div class="showcase-stat__label">Featured Frames</div>
+      </div>
+      <div class="showcase-stat">
+        <div class="showcase-stat__value">4</div>
+        <div class="showcase-stat__label">Filter Groups</div>
+      </div>
+      <div class="showcase-stat">
+        <div class="showcase-stat__value">2</div>
+        <div class="showcase-stat__label">Paged Views</div>
+      </div>
+    </div>
+
+    <div class="showcase-page__toolbar reveal reveal-delay-2">
+      <div class="showcase-filter-bar" role="toolbar" aria-label="Image filters">
+        <button type="button" class="showcase-filter__btn active" data-gallery-filter="all" aria-pressed="true">All <span class="showcase-filter__count">12</span></button>
+        <button type="button" class="showcase-filter__btn" data-gallery-filter="assembly" aria-pressed="false">Assembly <span class="showcase-filter__count">3</span></button>
+        <button type="button" class="showcase-filter__btn" data-gallery-filter="factory" aria-pressed="false">Manufacturing <span class="showcase-filter__count">3</span></button>
+        <button type="button" class="showcase-filter__btn" data-gallery-filter="testing" aria-pressed="false">Testing <span class="showcase-filter__count">3</span></button>
+        <button type="button" class="showcase-filter__btn" data-gallery-filter="logistics" aria-pressed="false">Logistics <span class="showcase-filter__count">3</span></button>
+      </div>
+      <div class="showcase-page__status">
+        <div class="showcase-page__status-copy">Showing <strong data-gallery-count>12</strong> images</div>
+        <div class="showcase-page__status-page">Current page <strong data-gallery-page>1</strong></div>
+      </div>
+    </div>
+
+    <div class="showcase-page__grid" role="list">
+      <article class="showcase-card reveal" role="listitem" data-gallery-item data-id="frame-01" data-category="assembly" data-title="Hub Assembly Bench" data-meta="Assembly line | Front module torque stage" data-description="Precision torque tools, guided fixtures, and staged subcomponents are arranged for repeatable front module assembly before final validation.">
+        <div class="showcase-card__media">
+          <img class="showcase-card__image" alt="Illustrated hub assembly bench scene" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%230b1017'/%3E%3Cstop offset='1' stop-color='%231e6fff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g1)'/%3E%3Ccircle cx='430' cy='290' r='145' fill='none' stroke='%23d8e4ef' stroke-width='16' opacity='.85'/%3E%3Ccircle cx='430' cy='290' r='70' fill='none' stroke='%238c9bad' stroke-width='10' opacity='.8'/%3E%3Ccircle cx='430' cy='290' r='18' fill='%23f4f6f8'/%3E%3Crect x='90' y='390' width='620' height='90' rx='12' fill='%23161a20' stroke='%233d4758'/%3E%3Crect x='130' y='170' width='150' height='190' rx='14' fill='%23080a0c' opacity='.62'/%3E%3Cpath d='M145 210h120M145 250h88M145 290h110' stroke='%234d8fff' stroke-width='8' stroke-linecap='round'/%3E%3Ctext x='90' y='540' fill='%23f4f6f8' font-size='44' font-family='Arial' letter-spacing='4'%3EASSEMBLY%3C/text%3E%3C/svg%3E">
+          <button type="button" class="showcase-card__zoom" data-gallery-open>View</button>
+          <div class="showcase-card__category">Assembly</div>
+        </div>
+        <div class="showcase-card__content">
+          <h3 class="showcase-card__title">Hub Assembly Bench</h3>
+          <p class="showcase-card__desc">Torque-controlled fixture cell configured for front module build-up and bearing seating.</p>
+          <div class="showcase-card__meta"><span>Cell A3</span><span>Front hub program</span></div>
+        </div>
+      </article>
+
+      <article class="showcase-card reveal reveal-delay-1" role="listitem" data-gallery-item data-id="frame-02" data-category="factory" data-title="CNC Machining Center" data-meta="Manufacturing | Finishing and race preparation" data-description="Multi-axis CNC equipment prepares flange, bore, and race surfaces to the tolerance band required for downstream balancing and fatigue performance.">
+        <div class="showcase-card__media">
+          <img class="showcase-card__image" alt="Illustrated CNC machining center" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g2' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%2311151d'/%3E%3Cstop offset='1' stop-color='%23b07818'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g2)'/%3E%3Crect x='130' y='110' width='510' height='330' rx='22' fill='%23161a20' stroke='%23b8c4d0' opacity='.85'/%3E%3Crect x='170' y='155' width='250' height='160' rx='18' fill='%23080a0c'/%3E%3Ccircle cx='520' cy='250' r='110' fill='none' stroke='%23f4f6f8' stroke-width='18' opacity='.78'/%3E%3Ccircle cx='520' cy='250' r='42' fill='%231e6fff' opacity='.45'/%3E%3Cpath d='M210 215h160M210 255h120M210 295h145' stroke='%234d8fff' stroke-width='10' stroke-linecap='round'/%3E%3Crect x='150' y='460' width='500' height='50' rx='10' fill='%23080a0c' opacity='.6'/%3E%3Ctext x='148' y='544' fill='%23f4f6f8' font-size='44' font-family='Arial' letter-spacing='4'%3EMANUFACTURING%3C/text%3E%3C/svg%3E">
+          <button type="button" class="showcase-card__zoom" data-gallery-open>View</button>
+          <div class="showcase-card__category">Manufacturing</div>
+        </div>
+        <div class="showcase-card__content">
+          <h3 class="showcase-card__title">CNC Machining Center</h3>
+          <p class="showcase-card__desc">High-rigidity metal cutting environment for hub flange precision and raceway finishing.</p>
+          <div class="showcase-card__meta"><span>Line M2</span><span>Rough to finish</span></div>
+        </div>
+      </article>
+
+      <article class="showcase-card reveal reveal-delay-2" role="listitem" data-gallery-item data-id="frame-03" data-category="testing" data-title="Seal Validation Rig" data-meta="Testing | Water ingress and endurance" data-description="A dedicated validation bay simulates contamination exposure, rotational wear, and seal retention under continuous duty cycles.">
+        <div class="showcase-card__media">
+          <img class="showcase-card__image" alt="Illustrated seal validation test rig" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g3' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%23080a0c'/%3E%3Cstop offset='1' stop-color='%233d4758'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g3)'/%3E%3Crect x='115' y='130' width='570' height='300' rx='26' fill='%23161a20' stroke='%238c9bad'/%3E%3Ccircle cx='285' cy='280' r='100' fill='none' stroke='%23f4f6f8' stroke-width='16'/%3E%3Ccircle cx='285' cy='280' r='40' fill='%234d8fff' opacity='.35'/%3E%3Crect x='430' y='170' width='180' height='170' rx='18' fill='%23080a0c'/%3E%3Cpath d='M460 220h120M460 260h88M460 300h100' stroke='%23e8a020' stroke-width='10' stroke-linecap='round'/%3E%3Cpath d='M130 450h540' stroke='%23b8c4d0' stroke-width='8' opacity='.5'/%3E%3Ctext x='120' y='540' fill='%23f4f6f8' font-size='44' font-family='Arial' letter-spacing='4'%3ETESTING%3C/text%3E%3C/svg%3E">
+          <button type="button" class="showcase-card__zoom" data-gallery-open>View</button>
+          <div class="showcase-card__category">Testing</div>
+        </div>
+        <div class="showcase-card__content">
+          <h3 class="showcase-card__title">Seal Validation Rig</h3>
+          <p class="showcase-card__desc">Ingress and endurance fixture used for seal life evaluation under accelerated cycles.</p>
+          <div class="showcase-card__meta"><span>Lab T1</span><span>Ingress protocol</span></div>
+        </div>
+      </article>
+
+      <article class="showcase-card reveal" role="listitem" data-gallery-item data-id="frame-04" data-category="logistics" data-title="Export Packing Zone" data-meta="Logistics | Protected outbound staging" data-description="Export-ready units are staged in serialized containers with shock-control packaging, barcode verification, and route-based pallet grouping.">
+        <div class="showcase-card__media">
+          <img class="showcase-card__image" alt="Illustrated export packing zone" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g4' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%23161a20'/%3E%3Cstop offset='1' stop-color='%231e6fff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g4)'/%3E%3Crect x='110' y='170' width='180' height='190' rx='14' fill='%23b07818' opacity='.8'/%3E%3Crect x='320' y='210' width='180' height='150' rx='14' fill='%23e8a020' opacity='.72'/%3E%3Crect x='530' y='150' width='160' height='210' rx='14' fill='%23080a0c' opacity='.62'/%3E%3Cpath d='M140 245h120M140 285h90M350 255h120M350 295h85M555 220h105M555 260h95M555 300h110' stroke='%23f4f6f8' stroke-width='10' stroke-linecap='round' opacity='.82'/%3E%3Crect x='90' y='390' width='620' height='84' rx='12' fill='%2311151d'/%3E%3Ctext x='90' y='542' fill='%23f4f6f8' font-size='44' font-family='Arial' letter-spacing='4'%3ELOGISTICS%3C/text%3E%3C/svg%3E">
+          <button type="button" class="showcase-card__zoom" data-gallery-open>View</button>
+          <div class="showcase-card__category">Logistics</div>
+        </div>
+        <div class="showcase-card__content">
+          <h3 class="showcase-card__title">Export Packing Zone</h3>
+          <p class="showcase-card__desc">Protected staging area for serialized packs before regional dispatch and container loading.</p>
+          <div class="showcase-card__meta"><span>Dock C</span><span>Outbound prep</span></div>
+        </div>
+      </article>
+
+      <article class="showcase-card reveal reveal-delay-1" role="listitem" data-gallery-item data-id="frame-05" data-category="assembly" data-title="Rotor and Flange Pairing" data-meta="Assembly | Kitting before press-fit" data-description="Matched rotor and flange sets are staged in sequence to control takt time and avoid mixed-lot installation during assembly.">
+        <div class="showcase-card__media">
+          <img class="showcase-card__image" alt="Illustrated rotor and flange pairing" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g5' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%230e1115'/%3E%3Cstop offset='1' stop-color='%234d8fff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g5)'/%3E%3Ccircle cx='275' cy='290' r='128' fill='none' stroke='%23f4f6f8' stroke-width='16' opacity='.82'/%3E%3Ccircle cx='275' cy='290' r='56' fill='none' stroke='%23b8c4d0' stroke-width='12'/%3E%3Ccircle cx='520' cy='275' r='110' fill='none' stroke='%23e8a020' stroke-width='14' opacity='.72'/%3E%3Ccircle cx='520' cy='275' r='42' fill='%23161a20'/%3E%3Cpath d='M120 470h560' stroke='%238c9bad' stroke-width='12' opacity='.6'/%3E%3Ctext x='118' y='545' fill='%23f4f6f8' font-size='44' font-family='Arial' letter-spacing='4'%3EKITTING%3C/text%3E%3C/svg%3E">
+          <button type="button" class="showcase-card__zoom" data-gallery-open>View</button>
+          <div class="showcase-card__category">Assembly</div>
+        </div>
+        <div class="showcase-card__content">
+          <h3 class="showcase-card__title">Rotor And Flange Pairing</h3>
+          <p class="showcase-card__desc">Pre-kitted sets reduce sequence loss and keep assembly cells synchronized across shift changeovers.</p>
+          <div class="showcase-card__meta"><span>Kitting lane</span><span>Batch verified</span></div>
+        </div>
+      </article>
+
+      <article class="showcase-card reveal reveal-delay-2" role="listitem" data-gallery-item data-id="frame-06" data-category="factory" data-title="Heat Treatment Corridor" data-meta="Manufacturing | Controlled metallurgical stage" data-description="Heat treatment chambers and cooling lanes are monitored for repeatable hardness profiles before grinding and final cleaning.">
+        <div class="showcase-card__media">
+          <img class="showcase-card__image" alt="Illustrated heat treatment corridor" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g6' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%23080a0c'/%3E%3Cstop offset='1' stop-color='%23e8a020'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g6)'/%3E%3Crect x='90' y='150' width='620' height='280' rx='24' fill='%23161a20' opacity='.88'/%3E%3Crect x='130' y='190' width='150' height='200' rx='16' fill='%23b07818' opacity='.74'/%3E%3Crect x='325' y='190' width='150' height='200' rx='16' fill='%23080a0c'/%3E%3Crect x='520' y='190' width='150' height='200' rx='16' fill='%23b07818' opacity='.74'/%3E%3Cpath d='M170 245h70M170 285h86M365 250h70M365 290h96M560 245h70M560 285h84' stroke='%23f4f6f8' stroke-width='10' stroke-linecap='round'/%3E%3Ctext x='90' y='544' fill='%23f4f6f8' font-size='44' font-family='Arial' letter-spacing='4'%3EHEAT TREAT%3C/text%3E%3C/svg%3E">
+          <button type="button" class="showcase-card__zoom" data-gallery-open>View</button>
+          <div class="showcase-card__category">Manufacturing</div>
+        </div>
+        <div class="showcase-card__content">
+          <h3 class="showcase-card__title">Heat Treatment Corridor</h3>
+          <p class="showcase-card__desc">Thermal process zone designed for hardness control before grinding and precision finishing.</p>
+          <div class="showcase-card__meta"><span>Process H4</span><span>Metallurgy control</span></div>
+        </div>
+      </article>
+      <article class="showcase-card reveal" role="listitem" data-gallery-item data-id="frame-07" data-category="testing" data-title="Runout Inspection Stand" data-meta="Testing | End-of-line geometric check" data-description="Laser and contact measurement fixtures confirm radial runout, lateral runout, and mounting-face accuracy before shipment release.">
+        <div class="showcase-card__media">
+          <img class="showcase-card__image" alt="Illustrated runout inspection stand" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g7' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%230e1115'/%3E%3Cstop offset='1' stop-color='%233d4758'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g7)'/%3E%3Ccircle cx='330' cy='280' r='125' fill='none' stroke='%23f4f6f8' stroke-width='14'/%3E%3Ccircle cx='330' cy='280' r='48' fill='%231e6fff' opacity='.38'/%3E%3Cpath d='M470 160v240M520 180v220' stroke='%23b8c4d0' stroke-width='12' stroke-linecap='round'/%3E%3Crect x='448' y='220' width='110' height='82' rx='12' fill='%23161a20' stroke='%234d8fff'/%3E%3Cpath d='M485 245h36M485 275h56' stroke='%23f4f6f8' stroke-width='8' stroke-linecap='round'/%3E%3Ctext x='95' y='542' fill='%23f4f6f8' font-size='44' font-family='Arial' letter-spacing='4'%3ERUNOUT CHECK%3C/text%3E%3C/svg%3E">
+          <button type="button" class="showcase-card__zoom" data-gallery-open>View</button>
+          <div class="showcase-card__category">Testing</div>
+        </div>
+        <div class="showcase-card__content">
+          <h3 class="showcase-card__title">Runout Inspection Stand</h3>
+          <p class="showcase-card__desc">End-of-line geometry verification before packed units are released to finished goods inventory.</p>
+          <div class="showcase-card__meta"><span>QC bay</span><span>Laser verified</span></div>
+        </div>
+      </article>
+
+      <article class="showcase-card reveal reveal-delay-1" role="listitem" data-gallery-item data-id="frame-08" data-category="logistics" data-title="Container Loading Lane" data-meta="Logistics | Sequenced shipment release" data-description="Regional orders are grouped and scanned in sequence before secured loading, reducing mismatch risk and simplifying customs documentation.">
+        <div class="showcase-card__media">
+          <img class="showcase-card__image" alt="Illustrated container loading lane" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g8' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%2311151d'/%3E%3Cstop offset='1' stop-color='%231e6fff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g8)'/%3E%3Crect x='90' y='180' width='220' height='170' rx='14' fill='%23b07818' opacity='.76'/%3E%3Crect x='340' y='160' width='170' height='190' rx='14' fill='%23161a20'/%3E%3Crect x='540' y='140' width='170' height='210' rx='14' fill='%23b07818' opacity='.76'/%3E%3Cpath d='M120 230h155M120 270h120M370 225h110M370 265h80M570 220h112M570 260h92M570 300h118' stroke='%23f4f6f8' stroke-width='10' stroke-linecap='round'/%3E%3Cpath d='M90 400h620' stroke='%238c9bad' stroke-width='10' opacity='.65'/%3E%3Ctext x='90' y='544' fill='%23f4f6f8' font-size='44' font-family='Arial' letter-spacing='4'%3EOUTBOUND%3C/text%3E%3C/svg%3E">
+          <button type="button" class="showcase-card__zoom" data-gallery-open>View</button>
+          <div class="showcase-card__category">Logistics</div>
+        </div>
+        <div class="showcase-card__content">
+          <h3 class="showcase-card__title">Container Loading Lane</h3>
+          <p class="showcase-card__desc">Verified lane for sequence-based loading and final shipping documentation checks.</p>
+          <div class="showcase-card__meta"><span>Dock D2</span><span>EU shipment batch</span></div>
+        </div>
+      </article>
+
+      <article class="showcase-card reveal reveal-delay-2" role="listitem" data-gallery-item data-id="frame-09" data-category="assembly" data-title="Bearing Press Station" data-meta="Assembly | Controlled fit and traceability" data-description="The press-fit stage captures force curves and trace codes to confirm seating consistency and preserve full build traceability.">
+        <div class="showcase-card__media">
+          <img class="showcase-card__image" alt="Illustrated bearing press station" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g9' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%23080a0c'/%3E%3Cstop offset='1' stop-color='%234d8fff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g9)'/%3E%3Cpath d='M250 135v235M250 135h300M550 135v235' stroke='%23b8c4d0' stroke-width='18' stroke-linecap='round'/%3E%3Ccircle cx='400' cy='300' r='118' fill='none' stroke='%23f4f6f8' stroke-width='15'/%3E%3Ccircle cx='400' cy='300' r='40' fill='%23161a20'/%3E%3Crect x='290' y='398' width='220' height='52' rx='10' fill='%2311151d'/%3E%3Ctext x='175' y='545' fill='%23f4f6f8' font-size='44' font-family='Arial' letter-spacing='4'%3EPRESS FIT%3C/text%3E%3C/svg%3E">
+          <button type="button" class="showcase-card__zoom" data-gallery-open>View</button>
+          <div class="showcase-card__category">Assembly</div>
+        </div>
+        <div class="showcase-card__content">
+          <h3 class="showcase-card__title">Bearing Press Station</h3>
+          <p class="showcase-card__desc">Controlled insertion force and trace data recording during critical bearing seating.</p>
+          <div class="showcase-card__meta"><span>Press line</span><span>Curve captured</span></div>
+        </div>
+      </article>
+
+      <article class="showcase-card reveal" role="listitem" data-gallery-item data-id="frame-10" data-category="factory" data-title="Surface Finish Cell" data-meta="Manufacturing | Final appearance and corrosion prep" data-description="The finishing cell handles surface preparation before coating, preserving corrosion resistance and cosmetic quality for export programs.">
+        <div class="showcase-card__media">
+          <img class="showcase-card__image" alt="Illustrated surface finish cell" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g10' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%23161a20'/%3E%3Cstop offset='1' stop-color='%238c9bad'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g10)'/%3E%3Crect x='120' y='160' width='560' height='250' rx='24' fill='%23080a0c' opacity='.58'/%3E%3Ccircle cx='250' cy='285' r='90' fill='none' stroke='%23f4f6f8' stroke-width='14'/%3E%3Ccircle cx='250' cy='285' r='35' fill='%23e8a020' opacity='.48'/%3E%3Crect x='400' y='205' width='205' height='140' rx='18' fill='%23161a20' stroke='%234d8fff'/%3E%3Cpath d='M432 245h140M432 285h95M432 325h110' stroke='%23f4f6f8' stroke-width='9' stroke-linecap='round'/%3E%3Ctext x='118' y='542' fill='%23f4f6f8' font-size='44' font-family='Arial' letter-spacing='4'%3EFINISHING%3C/text%3E%3C/svg%3E">
+          <button type="button" class="showcase-card__zoom" data-gallery-open>View</button>
+          <div class="showcase-card__category">Manufacturing</div>
+        </div>
+        <div class="showcase-card__content">
+          <h3 class="showcase-card__title">Surface Finish Cell</h3>
+          <p class="showcase-card__desc">Final finishing environment prepared for corrosion protection and visual quality consistency.</p>
+          <div class="showcase-card__meta"><span>Finishing line</span><span>Coating prep</span></div>
+        </div>
+      </article>
+
+      <article class="showcase-card reveal reveal-delay-1" role="listitem" data-gallery-item data-id="frame-11" data-category="testing" data-title="Fatigue Analysis Room" data-meta="Testing | Life cycle simulation and reporting" data-description="Rotational fatigue simulation captures life trends across load cases and feeds report packages used in customer PPAP and validation reviews.">
+        <div class="showcase-card__media">
+          <img class="showcase-card__image" alt="Illustrated fatigue analysis room" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g11' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%230e1115'/%3E%3Cstop offset='1' stop-color='%231e6fff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g11)'/%3E%3Crect x='105' y='140' width='590' height='300' rx='26' fill='%23161a20' opacity='.88'/%3E%3Crect x='145' y='180' width='220' height='180' rx='18' fill='%23080a0c'/%3E%3Cpath d='M170 310l35-45 45 24 55-68 36 34' stroke='%234d8fff' stroke-width='10' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='535' cy='280' r='110' fill='none' stroke='%23f4f6f8' stroke-width='16'/%3E%3Ccircle cx='535' cy='280' r='34' fill='%23e8a020' opacity='.5'/%3E%3Ctext x='102' y='542' fill='%23f4f6f8' font-size='44' font-family='Arial' letter-spacing='4'%3EFATIGUE LAB%3C/text%3E%3C/svg%3E">
+          <button type="button" class="showcase-card__zoom" data-gallery-open>View</button>
+          <div class="showcase-card__category">Testing</div>
+        </div>
+        <div class="showcase-card__content">
+          <h3 class="showcase-card__title">Fatigue Analysis Room</h3>
+          <p class="showcase-card__desc">Life-cycle simulation environment for duty case benchmarking and endurance reporting.</p>
+          <div class="showcase-card__meta"><span>Lab T4</span><span>Cycle analytics</span></div>
+        </div>
+      </article>
+
+      <article class="showcase-card reveal reveal-delay-2" role="listitem" data-gallery-item data-id="frame-12" data-category="logistics" data-title="Warehouse Locator Grid" data-meta="Logistics | Serialized inventory control" data-description="Finished units are mapped in a locator grid with serialized tracking to support fast retrieval and regional shipping accuracy.">
+        <div class="showcase-card__media">
+          <img class="showcase-card__image" alt="Illustrated warehouse locator grid" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g12' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%2311151d'/%3E%3Cstop offset='1' stop-color='%23b07818'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g12)'/%3E%3Cg fill='%23161a20' opacity='.92'%3E%3Crect x='120' y='130' width='150' height='130' rx='14'/%3E%3Crect x='325' y='130' width='150' height='130' rx='14'/%3E%3Crect x='530' y='130' width='150' height='130' rx='14'/%3E%3Crect x='120' y='300' width='150' height='130' rx='14'/%3E%3Crect x='325' y='300' width='150' height='130' rx='14'/%3E%3Crect x='530' y='300' width='150' height='130' rx='14'/%3E%3C/g%3E%3Cpath d='M155 185h78M155 355h78M360 185h78M360 355h78M565 185h78M565 355h78' stroke='%23f4f6f8' stroke-width='10' stroke-linecap='round'/%3E%3Ctext x='118' y='544' fill='%23f4f6f8' font-size='44' font-family='Arial' letter-spacing='4'%3EWAREHOUSE%3C/text%3E%3C/svg%3E">
+          <button type="button" class="showcase-card__zoom" data-gallery-open>View</button>
+          <div class="showcase-card__category">Logistics</div>
+        </div>
+        <div class="showcase-card__content">
+          <h3 class="showcase-card__title">Warehouse Locator Grid</h3>
+          <p class="showcase-card__desc">Serialized storage layout supporting fast retrieval and route-specific shipment planning.</p>
+          <div class="showcase-card__meta"><span>WH-07</span><span>Stock visibility</span></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="showcase-empty" data-gallery-empty hidden>
+      <h3 class="showcase-empty__title">No Images Match This Filter</h3>
+      <p class="showcase-empty__text">Choose another category to restore the gallery view. Pagination and lightbox navigation update automatically when the active filter changes.</p>
+    </div>
+
+    <div class="showcase-page__pagination reveal reveal-delay-3">
+      <div class="showcase-page__pagination-info" data-gallery-pagination-info>Page 1 of 2</div>
+      <div class="showcase-page__pagination-controls" data-gallery-pagination>
+        <button type="button" class="pagination__btn" data-gallery-prev aria-label="Previous page" disabled>
+          <svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        </button>
+        <button type="button" class="pagination__btn" data-gallery-next aria-label="Next page">
+          <svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="showcase-lightbox" data-lightbox aria-hidden="true">
+  <div class="showcase-lightbox__backdrop" data-lightbox-backdrop></div>
+  <div class="showcase-lightbox__dialog" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <button type="button" class="showcase-lightbox__close" data-lightbox-close aria-label="Close image viewer">&times;</button>
+    <div class="showcase-lightbox__visual">
+      <img data-lightbox-image alt="Expanded showcase image">
+    </div>
+    <div class="showcase-lightbox__panel">
+      <div>
+        <div class="showcase-lightbox__eyebrow">Image Detail</div>
+        <h3 class="showcase-lightbox__title" data-lightbox-title>Showcase Frame</h3>
+        <div class="showcase-lightbox__meta" data-lightbox-meta>Visual archive</div>
+        <p class="showcase-lightbox__text" data-lightbox-text>Focused review mode for imagery across operations, validation, and outbound readiness.</p>
+      </div>
+      <div class="showcase-lightbox__actions">
+        <div class="showcase-lightbox__counter" data-lightbox-counter>1 / 12</div>
+        <div class="showcase-lightbox__nav">
+          <button type="button" class="pagination__btn" data-lightbox-prev aria-label="Previous image">
+            <svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          </button>
+          <button type="button" class="pagination__btn" data-lightbox-next aria-label="Next image">
+            <svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo" aria-label="Axiom Drive home">
+          <div class="nav__logo-mark" aria-hidden="true"></div>
+          <div>
+            AXIOM DRIVE
+            <span class="nav__logo-sub">Precision Hub Systems</span>
+          </div>
+        </a>
+        <p class="footer__tagline">Global Tier-1 manufacturer of precision wheel hub assemblies. ISO and IATF 16949 certified with a zero-defect commitment.</p>
+        <div class="footer__certs">
+          <span class="footer__cert">IATF 16949</span>
+          <span class="footer__cert">ISO 9001</span>
+          <span class="footer__cert">ISO 14001</span>
+          <span class="footer__cert">RoHS</span>
+          <span class="footer__cert">REACH</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Products</div>
+        <ul class="footer__col-links">
+          <li><a href="products-archive.html" class="footer__col-link">Generation I Hubs</a></li>
+          <li><a href="products-archive.html" class="footer__col-link">Generation II Hubs</a></li>
+          <li><a href="products-archive.html" class="footer__col-link">Generation III Hubs</a></li>
+          <li><a href="products-archive.html" class="footer__col-link">Heavy Duty Hubs</a></li>
+          <li><a href="products-archive.html" class="footer__col-link">EV Platform Hubs</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Company</div>
+        <ul class="footer__col-links">
+          <li><a href="about-us.html" class="footer__col-link">About Us</a></li>
+          <li><a href="images-showcase.html" class="footer__col-link">Image Showcase</a></li>
+          <li><a href="index.html#quality" class="footer__col-link">Quality Assurance</a></li>
+          <li><a href="news-archive.html" class="footer__col-link">News & Insights</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Contact</div>
+        <ul class="footer__col-links">
+          <li><a href="contact.html" class="footer__col-link">OEM Enquiries</a></li>
+          <li><a href="contact.html" class="footer__col-link">Technical Support</a></li>
+          <li><a href="contact.html" class="footer__col-link">Quality Documents</a></li>
+          <li><a href="contact.html" class="footer__col-link">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">Copyright 2025 Axiom Drive Precision Manufacturing Co., Ltd. All rights reserved.</div>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Cookie Settings</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

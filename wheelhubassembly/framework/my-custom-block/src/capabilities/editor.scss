@@ -1,0 +1,274 @@
+/**
+ * editor.scss
+ * Styles scoped to the block editor canvas for the Axiom Capabilities block.
+ * Mirrors front-end design so the editor is truly WYSIWYG.
+ */
+
+/* ── Design tokens ───────────────────────────────────────────────────────── */
+.wp-block-axiom-capabilities {
+	--c-bg:       #0a0c0f;
+	--c-surface:  #111418;
+	--c-border:   rgba(255, 255, 255, 0.07);
+	--c-chrome:   #8b9aab;
+	--c-accent:   #c8a96e;
+	--c-text:     #e2e8f0;
+	--c-muted:    #8b9aab;
+
+	--font-sans:  'Inter', system-ui, sans-serif;
+	--font-mono:  'JetBrains Mono', 'Fira Code', monospace;
+
+	--radius:     4px;
+	--gap:        clamp(1.5rem, 3vw, 2.5rem);
+
+	/* ── Section shell ── */
+	background: var(--c-bg);
+	color:      var(--c-text);
+	padding:    clamp(4rem, 8vw, 7rem) 0;
+	font-family: var(--font-sans);
+
+	/* ── Container ── */
+	.container {
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 0 clamp(1rem, 4vw, 3rem);
+	}
+
+	/* ── Header ── */
+	.capabilities__header {
+		display:               grid;
+		grid-template-columns: 1fr 1fr;
+		gap:                   var(--gap);
+		align-items:           start;
+		margin-bottom:         clamp(3rem, 6vw, 5rem);
+
+		@media ( max-width: 768px ) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	/* ── Tag ── */
+	.tag {
+		display:          inline-block;
+		font-family:      var(--font-mono);
+		font-size:        0.7rem;
+		font-weight:      600;
+		letter-spacing:   0.15em;
+		text-transform:   uppercase;
+		color:            var(--c-accent);
+		border:           1px solid rgba(200, 169, 110, 0.3);
+		padding:          0.35em 0.9em;
+		border-radius:    var(--radius);
+		margin-bottom:    1.25rem;
+	}
+
+	/* ── Section title ── */
+	.section-title {
+		font-size:      clamp(2rem, 4vw, 3.25rem);
+		font-weight:    700;
+		line-height:    1.1;
+		letter-spacing: -0.02em;
+		color:          var(--c-text);
+		margin:         0;
+
+		span {
+			color:              transparent;
+			-webkit-text-stroke: 1px var(--c-accent);
+		}
+	}
+
+	/* ── Intro ── */
+	.capabilities__intro {
+		font-size:   1rem;
+		line-height: 1.75;
+		color:       var(--c-muted);
+		margin:      0;
+		padding-top: 0.5rem;
+
+		strong {
+			color:       var(--c-text);
+			font-weight: 600;
+		}
+	}
+
+	/* ── Grid ── */
+	.capabilities__grid {
+		display:               grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap:                   var(--gap);
+		align-items:           stretch;
+	}
+
+	/* ── Capability card ── */
+	.capability-card {
+		position:         relative;
+		background:       var(--c-surface);
+		border:           1px solid var(--c-border);
+		border-radius:    calc(var(--radius) * 2);
+		padding:          2rem;
+		display:          flex;
+		flex-direction:   column;
+		gap:              0.75rem;
+		transition:       border-color 0.2s ease;
+
+		&:hover {
+			border-color: rgba(200, 169, 110, 0.25);
+		}
+	}
+
+	/* ── Card icon ── */
+	.capability-icon {
+		width:        44px;
+		height:       44px;
+		border-radius: var(--radius);
+		background:   rgba(200, 169, 110, 0.08);
+		display:      flex;
+		align-items:  center;
+		justify-content: center;
+		margin-bottom: 0.25rem;
+
+		svg {
+			width:  22px;
+			height: 22px;
+			stroke: var(--c-accent);
+			fill:   none;
+			stroke-width: 1.5;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+		}
+	}
+
+	/* ── Card number ── */
+	.capability-card__number {
+		font-family:    var(--font-mono);
+		font-size:      0.65rem;
+		font-weight:    700;
+		letter-spacing: 0.12em;
+		color:          var(--c-accent);
+		text-transform: uppercase;
+	}
+
+	/* ── Card title ── */
+	.capability-card__title {
+		font-size:      1.05rem;
+		font-weight:    700;
+		letter-spacing: -0.01em;
+		color:          var(--c-text);
+		line-height:    1.3;
+	}
+
+	/* ── Card body text ── */
+	.capability-card__text {
+		font-size:   0.875rem;
+		line-height: 1.7;
+		color:       var(--c-muted);
+		flex:        1;
+		margin:      0;
+	}
+
+	/* ── Metric row ── */
+	.capability-card__metric-row {
+		display:     flex;
+		align-items: baseline;
+		gap:         0.2rem;
+		margin-top:  auto;
+		padding-top: 1rem;
+	}
+
+	.capability-card__metric-value {
+		font-family:    var(--font-mono);
+		font-size:      clamp(2rem, 3.5vw, 2.75rem);
+		font-weight:    700;
+		line-height:    1;
+		color:          var(--c-text);
+		letter-spacing: -0.03em;
+	}
+
+	.capability-card__metric-suffix {
+		font-size:   1rem;
+		font-weight: 500;
+		color:       var(--c-chrome);
+	}
+
+	/* ── Metric label ── */
+	.capability-card__metric-label {
+		font-family:    var(--font-mono);
+		font-size:      0.65rem;
+		font-weight:    600;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color:          var(--c-chrome);
+	}
+
+	/* ── Editor-only: remove card button ── */
+	.axiom-card-remove {
+		position:         absolute;
+		top:              0.6rem;
+		right:            0.6rem;
+		background:       rgba(255, 60, 60, 0.12);
+		border:           1px solid rgba(255, 60, 60, 0.25);
+		color:            #ff6b6b;
+		border-radius:    var(--radius);
+		width:            24px;
+		height:           24px;
+		font-size:        0.7rem;
+		cursor:           pointer;
+		display:          none; /* shown on card hover */
+		align-items:      center;
+		justify-content:  center;
+		line-height:       1;
+		padding:          0;
+		transition:       background 0.15s;
+
+		&:hover {
+			background: rgba(255, 60, 60, 0.25);
+		}
+	}
+
+	.capability-card:hover .axiom-card-remove {
+		display: flex;
+	}
+
+	/* ── Editor-only: add card button ── */
+	.axiom-add-card {
+		background:       transparent;
+		border:           2px dashed rgba(200, 169, 110, 0.25);
+		border-radius:    calc(var(--radius) * 2);
+		color:            var(--c-accent);
+		cursor:           pointer;
+		display:          flex;
+		flex-direction:   column;
+		align-items:      center;
+		justify-content:  center;
+		gap:              0.5rem;
+		padding:          2rem;
+		font-family:      var(--font-mono);
+		font-size:        0.75rem;
+		letter-spacing:   0.08em;
+		text-transform:   uppercase;
+		min-height:       180px;
+		transition:       border-color 0.2s, background 0.2s;
+
+		span {
+			font-size:   2rem;
+			line-height: 1;
+			font-weight: 300;
+		}
+
+		&:hover {
+			border-color: var(--c-accent);
+			background:   rgba(200, 169, 110, 0.05);
+		}
+	}
+
+	/* ── RichText placeholder colour ── */
+	[data-rich-text-placeholder]::before {
+		color: rgba(139, 154, 171, 0.4) !important;
+	}
+
+	/* ── Focus outline for editable areas ── */
+	.rich-text:focus {
+		outline:          2px dashed rgba(200, 169, 110, 0.4);
+		outline-offset:   2px;
+		border-radius:    2px;
+	}
+}

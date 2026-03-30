@@ -1,0 +1,129 @@
+.admin-bar .nav {
+    margin-top: 32px;
+}
+
+/* Hero Slider */
+.hero.swiper {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    /* Premium large hero height */
+    overflow: hidden;
+    background: #0a0a0a;
+    padding-bottom: 0 !important;
+    display: block !important;
+}
+
+.hero .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.hero__bg {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.8);
+}
+
+.hero__bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero__bg-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hero__bg::before,
+.hero__bg::after {
+    display: none !important;
+}
+
+/* Swiper Custom Styling */
+.hero .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.4);
+    opacity: 1;
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hero .swiper-pagination-bullet-active {
+    background: #2563eb;
+    /* A nice accent blue */
+    width: 60px;
+}
+
+.hero .swiper-button-next,
+.hero .swiper-button-prev {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+    transition: background 0.3s ease;
+}
+
+.hero .swiper-button-next:after,
+.hero .swiper-button-prev:after {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero .swiper-button-next:hover,
+.hero .swiper-button-prev:hover {
+    background: rgba(37, 99, 235, 0.6);
+}
+
+/* Nav High Contrast for Dark Hero */
+.nav:not(.scrolled) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+    backdrop-filter: blur(2px);
+    transition: all 0.4s ease;
+}
+
+.nav:not(.scrolled) .nav__link {
+    color: #F8F1E6 !important;
+    /* var(--c-black) is cream */
+}
+
+.nav:not(.scrolled) .nav__logo {
+    color: #F8F1E6 !important;
+}
+
+.nav:not(.scrolled) .nav__logo-sub {
+    color: rgba(248, 241, 230, 0.6) !important;
+}
+
+.nav:not(.scrolled) .nav__arrow {
+    color: #F8F1E6 !important;
+}
+
+.nav:not(.scrolled) .nav__hamburger span {
+    background: #F8F1E6 !important;
+}
+
+.nav:not(.scrolled) .nav__logo-mark {
+    border-color: #D9B75A !important;
+}
+
+.nav:not(.scrolled) .nav__logo-mark::before {
+    background: #D9B75A !important;
+    box-shadow: 0 0 15px #D9B75A !important;
+}
+
+/* Ensure mobile menu links are visible if opened while not scrolled */
+.mobile-menu {
+    background: #0D0A08;
+    /* Dark background for mobile menu */
+}
+
+.mobile-menu__link {
+    color: #F8F1E6 !important;
+}

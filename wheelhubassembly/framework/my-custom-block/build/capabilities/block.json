@@ -1,0 +1,70 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "axiom/capabilities",
+  "version": "1.0.0",
+  "title": "Capabilities Section",
+  "category": "layout",
+  "description": "A capabilities section block with editable cards, metrics, and intro text.",
+  "supports": {
+    "html": false,
+    "align": [
+      "full",
+      "wide"
+    ]
+  },
+  "attributes": {
+    "tag": {
+      "type": "string",
+      "default": "Core Capabilities"
+    },
+    "sectionTitle": {
+      "type": "string",
+      "default": "Built for <span>Demanding</span> Applications"
+    },
+    "intro": {
+      "type": "string",
+      "default": "Axiom Drive operates <strong>three dedicated manufacturing facilities</strong> spanning 180,000 m², equipped with closed-loop forging presses, 5-axis CNC machining centers, and fully automated assembly lines. Every unit exits through our <strong>multi-stage zero-defect protocol</strong> before shipment."
+    },
+    "cards": {
+      "type": "array",
+      "default": [
+        {
+          "number": "01",
+          "title": "Precision Forging",
+          "text": "Closed-die hot forging with automated flash trimming. Bearing-grade steel blanks with controlled metallurgical properties.",
+          "metric": "4,500",
+          "metricSuffix": "T",
+          "metricLabel": "Max Press Capacity"
+        },
+        {
+          "number": "02",
+          "title": "CNC Machining",
+          "text": "48 machining centers operating 24/7. Sub-micron tolerances on bearing surfaces. Hard turning and grinding for final geometry.",
+          "metric": "±2µm",
+          "metricSuffix": "",
+          "metricLabel": "Bearing Race Tolerance"
+        },
+        {
+          "number": "03",
+          "title": "Heat Treatment",
+          "text": "Controlled atmosphere carburizing and induction hardening. Optimised case depth profiles for fatigue resistance and load rating.",
+          "metric": "62",
+          "metricSuffix": "HRC",
+          "metricLabel": "Surface Hardness"
+        },
+        {
+          "number": "04",
+          "title": "Assembly & Testing",
+          "text": "Automated assembly cells with 100% torque verification, ABS encoder ring integration, and end-of-line noise testing.",
+          "metric": "100%",
+          "metricSuffix": "",
+          "metricLabel": "End-of-Line Inspection"
+        }
+      ]
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "render": "file:./render.php"
+}

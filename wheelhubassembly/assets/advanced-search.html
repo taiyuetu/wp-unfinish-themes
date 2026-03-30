@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Search | AXIOM DRIVE</title>
+<meta name="description" content="Advanced product search for wheel hub assemblies by year, make, model, product category, part number, OE number, and VIN reference.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Barlow:wght@300;400;500;600&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav" id="mainNav" aria-label="Primary navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="Axiom Drive home">
+      <div class="nav__logo-mark" aria-hidden="true"></div>
+      <div>AXIOM DRIVE <span class="nav__logo-sub">Precision Hub Systems</span></div>
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="index.html#capabilities" class="nav__link">Capabilities</a></li>
+      <li><a href="products-archive.html" class="nav__link">Products</a></li>
+      <li><a href="advanced-search.html" class="nav__link">Advanced Search</a></li>
+      <li><a href="images-showcase.html" class="nav__link">Showcase</a></li>
+      <li><a href="about-us.html" class="nav__link">About</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav__cta">Request Quote</a>
+  </div>
+  <button class="nav__hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+  <nav class="mobile-menu__links">
+    <a href="index.html#capabilities" class="mobile-menu__link">Capabilities <svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    <a href="products-archive.html" class="mobile-menu__link">Products <svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    <a href="advanced-search.html" class="mobile-menu__link">Advanced Search <svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    <a href="images-showcase.html" class="mobile-menu__link">Showcase <svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    <a href="contact.html" class="mobile-menu__link">Contact <svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+  </nav>
+  <div class="mobile-menu__cta"><a href="contact.html" class="btn-primary"><span>Request Technical Quote</span><svg class="icon icon--sm" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+</div>
+
+<section class="page-banner" aria-labelledby="page-banner-title">
+  <div class="page-banner__bg" aria-hidden="true"></div>
+  <div class="page-banner__hub" aria-hidden="true"><div class="hub-ring"></div><div class="hub-ring"></div><div class="hub-ring"></div><div class="hub-center"></div></div>
+  <div class="container"><div class="page-banner__content"><h1 class="page-banner__title reveal" id="page-banner-title">Advanced <span>Search</span></h1></div></div>
+</section>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <div class="container"><ol class="breadcrumbs__list"><li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Home</a></li><li class="breadcrumbs__separator" aria-hidden="true">/</li><li class="breadcrumbs__item"><span class="breadcrumbs__current" aria-current="page">Advanced Search</span></li></ol></div>
+</nav>
+
+<section class="advanced-search-page" data-advanced-search>
+  <div class="container">
+    <div class="advanced-search-page__layout">
+      <aside class="advanced-search-page__sidebar reveal">
+        <div class="advanced-search-page__eyebrow">Product Lookup</div>
+        <h2 class="advanced-search-page__title">Search By Fitment Or Reference Number</h2>
+        <p class="advanced-search-page__text">Use the structured filters for year, make, model, and product category. The keyword field searches part number, OE number, and VIN reference together.</p>
+
+        <form class="advanced-search-form" data-advanced-search-form>
+          <div class="advanced-search-field">
+            <label class="advanced-search-field__label" for="keywordSearch">Part Number / OE Number / VIN</label>
+            <input class="advanced-search-field__control" id="keywordSearch" type="search" data-search-keyword placeholder="AX-3560-EV, OE-51240-TZ5-A01, 1HGCV1F3XJA000000">
+          </div>
+          <div class="advanced-search-field">
+            <label class="advanced-search-field__label" for="yearSelectAdvanced">Year</label>
+            <select class="advanced-search-field__control advanced-search-field__select" id="yearSelectAdvanced" data-search-year></select>
+          </div>
+          <div class="advanced-search-field">
+            <label class="advanced-search-field__label" for="makeSelectAdvanced">Make</label>
+            <select class="advanced-search-field__control advanced-search-field__select" id="makeSelectAdvanced" data-search-make></select>
+          </div>
+          <div class="advanced-search-field">
+            <label class="advanced-search-field__label" for="modelSelectAdvanced">Model</label>
+            <select class="advanced-search-field__control advanced-search-field__select" id="modelSelectAdvanced" data-search-model></select>
+          </div>
+          <div class="advanced-search-field">
+            <label class="advanced-search-field__label" for="categorySelectAdvanced">Product Category</label>
+            <select class="advanced-search-field__control advanced-search-field__select" id="categorySelectAdvanced" data-search-category></select>
+          </div>
+          <div class="advanced-search-form__actions">
+            <button class="btn-primary" type="submit"><span>Search Catalog</span></button>
+            <button class="btn-secondary" type="button" data-search-reset><span>Reset Filters</span></button>
+          </div>
+        </form>
+
+        <div class="advanced-search-panel reveal reveal-delay-1">
+          <div class="advanced-search-panel__title">Search Notes</div>
+          <div class="advanced-search-panel__list">
+            <div class="advanced-search-panel__item"><span>Keyword scope</span><span>Part / OE / VIN</span></div>
+            <div class="advanced-search-panel__item"><span>Fitment filters</span><span>Year / Make / Model</span></div>
+            <div class="advanced-search-panel__item"><span>Product grouping</span><span>Category aware</span></div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="advanced-search-page__results">
+        <div class="advanced-search-results__header reveal">
+          <div class="advanced-search-results__eyebrow">Indexed Hub Assemblies</div>
+          <h2 class="advanced-search-results__title">Matching Products</h2>
+          <p class="advanced-search-results__text">The template below can be connected to live data later. For now, the page behaves like a working client-side search and filter interface.</p>
+          <div class="advanced-search-results__meta">
+            <div class="advanced-search-results__count"><strong data-search-count>8</strong> results</div>
+            <div class="advanced-search-results__summary" data-search-summary>Showing all indexed hub assemblies</div>
+          </div>
+        </div>
+
+        <div class="advanced-search-results__list">
+          <article class="advanced-search-card reveal" data-search-card data-year="2024" data-make="Honda" data-model="Accord" data-category="Generation III Hub Unit" data-partnumber="AX-3560-EV" data-oenumber="OE-51240-TZ5-A01" data-vin="1HGCV1F3XJA000000">
+            <div class="advanced-search-card__top"><span class="advanced-search-card__type">Generation III Hub Unit</span><span class="advanced-search-card__fitment">2024 Honda Accord</span></div>
+            <h3 class="advanced-search-card__title">AX-3560 EV Integrated Hub</h3>
+            <p class="advanced-search-card__excerpt">Low-friction integrated hub assembly with encoder support for high-mileage EV and hybrid passenger vehicle programs.</p>
+            <div class="advanced-search-card__data">
+              <div class="advanced-search-data"><div class="advanced-search-data__label">Part Number</div><div class="advanced-search-data__value">AX-3560-EV</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">OE Number</div><div class="advanced-search-data__value">OE-51240-TZ5-A01</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">VIN Ref</div><div class="advanced-search-data__value">1HGCV1F3XJA000000</div></div>
+            </div>
+          </article>
+
+          <article class="advanced-search-card reveal reveal-delay-1" data-search-card data-year="2023" data-make="Toyota" data-model="Camry" data-category="Generation II Hub Assembly" data-partnumber="AX-2240-F5" data-oenumber="OE-43550-06130" data-vin="4T1G11AK5PU123456">
+            <div class="advanced-search-card__top"><span class="advanced-search-card__type">Generation II Hub Assembly</span><span class="advanced-search-card__fitment">2023 Toyota Camry</span></div>
+            <h3 class="advanced-search-card__title">AX-2240 Front Hub Assembly</h3>
+            <p class="advanced-search-card__excerpt">ABS-ready front hub assembly designed for mid-size sedan fitment with extended seal life and low-noise bearing geometry.</p>
+            <div class="advanced-search-card__data">
+              <div class="advanced-search-data"><div class="advanced-search-data__label">Part Number</div><div class="advanced-search-data__value">AX-2240-F5</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">OE Number</div><div class="advanced-search-data__value">OE-43550-06130</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">VIN Ref</div><div class="advanced-search-data__value">4T1G11AK5PU123456</div></div>
+            </div>
+          </article>
+
+          <article class="advanced-search-card reveal reveal-delay-2" data-search-card data-year="2022" data-make="Ford" data-model="F-150" data-category="Heavy Duty Hub Unit" data-partnumber="AX-8800-HD" data-oenumber="OE-ML3Z-1104-B" data-vin="1FTFW1E87NFA65432">
+            <div class="advanced-search-card__top"><span class="advanced-search-card__type">Heavy Duty Hub Unit</span><span class="advanced-search-card__fitment">2022 Ford F-150</span></div>
+            <h3 class="advanced-search-card__title">AX-8800 Heavy Duty Hub</h3>
+            <p class="advanced-search-card__excerpt">Commercial-grade hub unit with elevated load support, corrosion-resistant surface treatment, and towing-focused durability.</p>
+            <div class="advanced-search-card__data">
+              <div class="advanced-search-data"><div class="advanced-search-data__label">Part Number</div><div class="advanced-search-data__value">AX-8800-HD</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">OE Number</div><div class="advanced-search-data__value">OE-ML3Z-1104-B</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">VIN Ref</div><div class="advanced-search-data__value">1FTFW1E87NFA65432</div></div>
+            </div>
+          </article>
+
+          <article class="advanced-search-card reveal" data-search-card data-year="2024" data-make="Tesla" data-model="Model Y" data-category="EV Hub Bearing Module" data-partnumber="AX-4022-EY" data-oenumber="OE-1188761-00-C" data-vin="7SAYGDEE7RF765432">
+            <div class="advanced-search-card__top"><span class="advanced-search-card__type">EV Hub Bearing Module</span><span class="advanced-search-card__fitment">2024 Tesla Model Y</span></div>
+            <h3 class="advanced-search-card__title">AX-4022 Rear EV Hub Module</h3>
+            <p class="advanced-search-card__excerpt">Rear hub bearing module configured for high-torque electric crossover platforms with optimized preload retention.</p>
+            <div class="advanced-search-card__data">
+              <div class="advanced-search-data"><div class="advanced-search-data__label">Part Number</div><div class="advanced-search-data__value">AX-4022-EY</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">OE Number</div><div class="advanced-search-data__value">OE-1188761-00-C</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">VIN Ref</div><div class="advanced-search-data__value">7SAYGDEE7RF765432</div></div>
+            </div>
+          </article>
+
+          <article class="advanced-search-card reveal reveal-delay-1" data-search-card data-year="2021" data-make="BMW" data-model="X5" data-category="Generation III Hub Unit" data-partnumber="AX-3675-BX" data-oenumber="OE-31206878919" data-vin="5UXCR6C06M9D11223">
+            <div class="advanced-search-card__top"><span class="advanced-search-card__type">Generation III Hub Unit</span><span class="advanced-search-card__fitment">2021 BMW X5</span></div>
+            <h3 class="advanced-search-card__title">AX-3675 Premium Hub Unit</h3>
+            <p class="advanced-search-card__excerpt">Performance-oriented Gen III hub unit with encoder ring integration and high-speed seal performance for premium SUV fitment.</p>
+            <div class="advanced-search-card__data">
+              <div class="advanced-search-data"><div class="advanced-search-data__label">Part Number</div><div class="advanced-search-data__value">AX-3675-BX</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">OE Number</div><div class="advanced-search-data__value">OE-31206878919</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">VIN Ref</div><div class="advanced-search-data__value">5UXCR6C06M9D11223</div></div>
+            </div>
+          </article>
+
+          <article class="advanced-search-card reveal reveal-delay-2" data-search-card data-year="2020" data-make="Volkswagen" data-model="Tiguan" data-category="Generation II Hub Assembly" data-partnumber="AX-2108-VT" data-oenumber="OE-5Q0498625E" data-vin="3VV2B7AX2LM098765">
+            <div class="advanced-search-card__top"><span class="advanced-search-card__type">Generation II Hub Assembly</span><span class="advanced-search-card__fitment">2020 Volkswagen Tiguan</span></div>
+            <h3 class="advanced-search-card__title">AX-2108 SUV Front Hub</h3>
+            <p class="advanced-search-card__excerpt">Balanced front hub assembly for compact SUV applications, combining corrosion resistance and stable ABS signal performance.</p>
+            <div class="advanced-search-card__data">
+              <div class="advanced-search-data"><div class="advanced-search-data__label">Part Number</div><div class="advanced-search-data__value">AX-2108-VT</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">OE Number</div><div class="advanced-search-data__value">OE-5Q0498625E</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">VIN Ref</div><div class="advanced-search-data__value">3VV2B7AX2LM098765</div></div>
+            </div>
+          </article>
+
+          <article class="advanced-search-card reveal" data-search-card data-year="2023" data-make="Nissan" data-model="Altima" data-category="Generation I Hub Assembly" data-partnumber="AX-1180-NA" data-oenumber="OE-40202-6CA0A" data-vin="1N4BL4BV6PN334455">
+            <div class="advanced-search-card__top"><span class="advanced-search-card__type">Generation I Hub Assembly</span><span class="advanced-search-card__fitment">2023 Nissan Altima</span></div>
+            <h3 class="advanced-search-card__title">AX-1180 Standard Front Hub</h3>
+            <p class="advanced-search-card__excerpt">Economical front hub assembly for high-volume passenger sedan programs with reliable fitment and simplified service replacement.</p>
+            <div class="advanced-search-card__data">
+              <div class="advanced-search-data"><div class="advanced-search-data__label">Part Number</div><div class="advanced-search-data__value">AX-1180-NA</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">OE Number</div><div class="advanced-search-data__value">OE-40202-6CA0A</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">VIN Ref</div><div class="advanced-search-data__value">1N4BL4BV6PN334455</div></div>
+            </div>
+          </article>
+
+          <article class="advanced-search-card reveal reveal-delay-1" data-search-card data-year="2024" data-make="Hyundai" data-model="Santa Fe" data-category="Generation III Hub Unit" data-partnumber="AX-3904-HS" data-oenumber="OE-51750-P2000" data-vin="5NMS4DAL7RH445566">
+            <div class="advanced-search-card__top"><span class="advanced-search-card__type">Generation III Hub Unit</span><span class="advanced-search-card__fitment">2024 Hyundai Santa Fe</span></div>
+            <h3 class="advanced-search-card__title">AX-3904 Smart Hub Unit</h3>
+            <p class="advanced-search-card__excerpt">Integrated smart hub unit for crossover platforms with improved sensor stability and reduced rolling resistance.</p>
+            <div class="advanced-search-card__data">
+              <div class="advanced-search-data"><div class="advanced-search-data__label">Part Number</div><div class="advanced-search-data__value">AX-3904-HS</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">OE Number</div><div class="advanced-search-data__value">OE-51750-P2000</div></div>
+              <div class="advanced-search-data"><div class="advanced-search-data__label">VIN Ref</div><div class="advanced-search-data__value">5NMS4DAL7RH445566</div></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="advanced-search-empty" data-search-empty hidden>
+          <h3 class="advanced-search-empty__title">No Matching Products</h3>
+          <p class="advanced-search-empty__text">Adjust the fitment filters or broaden the part number, OE number, or VIN keyword to restore results.</p>
+        </div>
+      </main>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand"><a href="index.html" class="nav__logo" aria-label="Axiom Drive home"><div class="nav__logo-mark" aria-hidden="true"></div><div>AXIOM DRIVE<span class="nav__logo-sub">Precision Hub Systems</span></div></a><p class="footer__tagline">Global Tier-1 manufacturer of precision wheel hub assemblies. ISO and IATF 16949 certified with a zero-defect commitment.</p><div class="footer__certs"><span class="footer__cert">IATF 16949</span><span class="footer__cert">ISO 9001</span><span class="footer__cert">ISO 14001</span><span class="footer__cert">RoHS</span><span class="footer__cert">REACH</span></div></div>
+      <div><div class="footer__col-title">Products</div><ul class="footer__col-links"><li><a href="products-archive.html" class="footer__col-link">Generation I Hubs</a></li><li><a href="products-archive.html" class="footer__col-link">Generation II Hubs</a></li><li><a href="products-archive.html" class="footer__col-link">Generation III Hubs</a></li><li><a href="products-archive.html" class="footer__col-link">Heavy Duty Hubs</a></li></ul></div>
+      <div><div class="footer__col-title">Tools</div><ul class="footer__col-links"><li><a href="advanced-search.html" class="footer__col-link">Advanced Search</a></li><li><a href="images-showcase.html" class="footer__col-link">Image Showcase</a></li><li><a href="search-results.html" class="footer__col-link">Site Search</a></li><li><a href="contact.html" class="footer__col-link">Technical Support</a></li></ul></div>
+      <div><div class="footer__col-title">Contact</div><ul class="footer__col-links"><li><a href="contact.html" class="footer__col-link">OEM Enquiries</a></li><li><a href="contact.html" class="footer__col-link">Technical Support</a></li><li><a href="contact.html" class="footer__col-link">Quality Documents</a></li><li><a href="contact.html" class="footer__col-link">Careers</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><div class="footer__copy">Copyright 2025 Axiom Drive Precision Manufacturing Co., Ltd. All rights reserved.</div><div class="footer__legal"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Cookie Settings</a><a href="#">Sitemap</a></div></div>
+  </div>
+</footer>
+
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
